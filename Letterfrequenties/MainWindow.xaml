@@ -1,0 +1,25 @@
+﻿<Window x:Class="Letterfrequenties.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Letterfrequenties"
+        mc:Ignorable="d"
+        Title="Letterfrequenties - Door Freek Heining" Height="400" Width="450">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="180*"/>
+            <ColumnDefinition Width="17*"/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="open_Button" Content="Open .txt document" HorizontalAlignment="Left" Margin="30,35,0,0" VerticalAlignment="Top" Width="135" Click="open_Button_Click" Height="35" TabIndex="1" FontSize="14"/>
+        <Button x:Name="calculate_Button" Content="Calculate" HorizontalAlignment="Left" Margin="30,225,0,0" VerticalAlignment="Top" Width="115" Click="calculate_Button_Click" IsEnabled="False" Height="35" FontSize="14"/>
+        <CheckBox x:Name="loaded_CheckBox" Content="Document Loaded" HorizontalAlignment="Left" Margin="191,55,0,0" VerticalAlignment="Top" IsEnabled="False" Height="15" FontSize="14"/>
+        <TextBox x:Name="search_TextBox" HorizontalAlignment="Left" Height="23" Margin="325,142,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="35" MaxLength="2" TextChanged="search_TextBox_TextChanged" IsEnabled="False" KeyDown="search_TextBox_KeyDown" TabIndex="2" FontSize="14"/>
+        <TextBlock x:Name="result_TextBlock" HorizontalAlignment="Left" Margin="96,298,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="14"/>
+        <Label Content="Enter 1 or 2 character combinations to count:" HorizontalAlignment="Left" Margin="30,139,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.385,-0.977" FontSize="14"/>
+        <Label Content="Result:" HorizontalAlignment="Left" Margin="30,293,0,0" VerticalAlignment="Top" FontSize="14"/>
+
+
+
+    </Grid>
+</Window>
